@@ -1,0 +1,2 @@
+# LearnLinq
+LinqDifferentMethod
