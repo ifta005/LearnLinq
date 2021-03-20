@@ -1,12 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleLinqLearnApp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int idea;
+            Console.WriteLine("[1]SELECT LINQ: ");
+
+            Console.Write("[Enter]: ");
+            idea = Convert.ToInt32(Console.ReadLine());
+            switch (idea)
+            {
+                case 1:
+                    Console.WriteLine("SELECT LINQ");
+                    SelectOperator.GetEmployeeInfo();
+                    break;
+            }
+                    SelectOperator.GetEmployeeInfo();
+            Console.ReadKey();
         }
     }
 }
