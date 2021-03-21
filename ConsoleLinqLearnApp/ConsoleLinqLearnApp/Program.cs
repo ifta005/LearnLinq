@@ -8,13 +8,18 @@ namespace ConsoleLinqLearnApp
     {
         public static void Main(string[] args)
         {
-            int idea;
+            int caseSwitch = 0;
             Console.WriteLine("[1]SELECT : ");
             Console.WriteLine("[2]SELECT Many : ");
+            Console.WriteLine("[3]SELECT Where : ");
+            Console.WriteLine("[4]SELECT Where : ");
+            Console.WriteLine("[5]Of Type : ");
 
-            Console.Write("[Enter]: ");
-            idea = Convert.ToInt32(Console.ReadLine());
-            switch (idea)
+            Console.WriteLine("[0]EXIT : ");
+
+            Console.Write("[Enter No]: ");
+            caseSwitch = Convert.ToInt32(Console.ReadLine());
+            switch (caseSwitch)
             {
                 case 1:
                     SelectOperator.GetEmployeeInfo();
@@ -24,8 +29,26 @@ namespace ConsoleLinqLearnApp
                     SelectManyOperator.GetStudentInfo();
                     Console.WriteLine("**************");
                     break;
-            }                    
-            Console.ReadKey();
+                case 3:
+                    Console.WriteLine("**************");
+                    Predicate.GetOddValueWithIndex();
+                    Console.WriteLine("**************");
+                    break;
+                case 4:
+                    Console.WriteLine("**************");
+                    Predicate.GetEmpInfoWithSalary();
+                    Console.WriteLine("**************");
+                    break;
+                case 5:
+                    Console.WriteLine("**************");
+                    OfTypeOperator.GetValue();
+                    Console.WriteLine("**************");
+                    break;
+                default:
+                    Environment.Exit(0);// exit
+                    break;
+            }
+            Environment.Exit(1);// exit
         }
     }
 }
