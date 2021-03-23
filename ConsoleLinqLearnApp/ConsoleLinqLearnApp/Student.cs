@@ -20,5 +20,21 @@ namespace ConsoleLinqLearnApp
                 new Student(){ID = 4, Name = "Sara", Email = "Sara@j.com", Programming = new List<string>() { "ADO.NET", "C#", "LINQ" } }
             };
         }
+
+      
+        public static List<Student> GetSchoolStudents()
+        {
+            List<Student> students = new List<Student>()
+            {
+                new Student {ID = 101, Name = "Preety" },
+                new Student {ID = 102, Name = "Sambit" },
+                new Student {ID = 103, Name = "Hina"},
+                new Student {ID = 104, Name = "Anurag"},
+                new Student {ID = 102, Name = "Sambit"},
+                new Student {ID = 103, Name = "Hina"},
+                new Student {ID = 101, Name = "Preety" },
+            };
+            return students;
+        }
     }
 }

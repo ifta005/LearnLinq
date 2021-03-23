@@ -14,8 +14,10 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[3]SELECT Where : ");
             Console.WriteLine("[4]SELECT Where : ");
             Console.WriteLine("[5]Of Type : ");
+            Console.WriteLine("[6]Distinct : ");
+            Console.WriteLine("[7]Distinct_2 : ");
 
-            Console.WriteLine("[0]EXIT : ");
+            Console.WriteLine("\n[0]EXIT : ");
 
             Console.Write("[Enter No]: ");
             caseSwitch = Convert.ToInt32(Console.ReadLine());
@@ -42,6 +44,16 @@ namespace ConsoleLinqLearnApp
                 case 5:
                     Console.WriteLine("**************");
                     OfTypeOperator.GetValue();
+                    Console.WriteLine("**************");
+                    break;
+                case 6:
+                    Console.WriteLine("**************");
+                    DistinctOperator.GetDistinctStudent();
+                    Console.WriteLine("**************");
+                    break;
+                case 7:
+                    Console.WriteLine("**************");
+                    StudentComparerDemo.GetStudentWithDistinctValue();
                     Console.WriteLine("**************");
                     break;
                 default:
