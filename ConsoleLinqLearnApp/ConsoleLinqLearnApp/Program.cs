@@ -16,6 +16,9 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[5]Of Type : ");
             Console.WriteLine("[6]Distinct : ");
             Console.WriteLine("[7]Distinct_2 : ");
+            Console.WriteLine("[8]Except : ");
+            Console.WriteLine("[9]Intersect : ");
+            Console.WriteLine("[10]Union : ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -55,6 +58,21 @@ namespace ConsoleLinqLearnApp
                     Console.WriteLine("**************");
                     StudentComparerDemo.GetStudentWithDistinctValue();
                     Console.WriteLine("**************");
+                    break;
+                case 8:
+                    Console.WriteLine("******Except********");
+                    MethodExcept.GetInfoExceptList();
+                    Console.WriteLine("**************");
+                    break;
+                case 9:
+                    Console.WriteLine("\n******Intersect********");
+                    MethodIntersect.GetDataByIntersect();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 10:
+                    Console.WriteLine("\n******UNION********");
+                    MethodUnion.GetDataByUnion();
+                    Console.WriteLine("\n**************");
                     break;
                 default:
                     Environment.Exit(0);// exit
