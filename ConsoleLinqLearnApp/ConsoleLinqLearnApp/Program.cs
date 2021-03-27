@@ -22,6 +22,8 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[11]Reverse : ");
             Console.WriteLine("[12]Average : ");
             Console.WriteLine("[13]Aggregate : ");
+            Console.WriteLine("[14]ALL Operator : ");
+            Console.WriteLine("[15]ALL Operator : ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -93,6 +95,16 @@ namespace ConsoleLinqLearnApp
                     Console.WriteLine("\n**************");
                     Console.WriteLine("\n******Aggregate********");
                     AggregateMethod.GetValueBYForEmployee();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 14:
+                    Console.WriteLine("\n******Average********");
+                    QuantifiersOperatorALL.GetDataByALL();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 15:
+                    Console.WriteLine("\n******Average********");
+                    QuantifiersOperatorAny.GetDataByAnyOpr();
                     Console.WriteLine("\n**************");
                     break;
                 default:
