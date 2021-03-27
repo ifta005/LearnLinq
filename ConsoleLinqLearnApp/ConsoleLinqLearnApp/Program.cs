@@ -19,6 +19,8 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[8]Except : ");
             Console.WriteLine("[9]Intersect : ");
             Console.WriteLine("[10]Union : ");
+            Console.WriteLine("[11]Reverse : ");
+            Console.WriteLine("[12]Average : ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -72,6 +74,16 @@ namespace ConsoleLinqLearnApp
                 case 10:
                     Console.WriteLine("\n******UNION********");
                     MethodUnion.GetDataByUnion();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 11:
+                    Console.WriteLine("\n******Reverse********");
+                    ReverseMethod.GetReverseData();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 12:
+                    Console.WriteLine("\n******Average********");
+                    AverageMethod.GetTotalValueBYFunc();
                     Console.WriteLine("\n**************");
                     break;
                 default:
