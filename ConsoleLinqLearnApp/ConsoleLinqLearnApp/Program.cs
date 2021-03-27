@@ -21,6 +21,7 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[10]Union : ");
             Console.WriteLine("[11]Reverse : ");
             Console.WriteLine("[12]Average : ");
+            Console.WriteLine("[13]Aggregate : ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -84,6 +85,14 @@ namespace ConsoleLinqLearnApp
                 case 12:
                     Console.WriteLine("\n******Average********");
                     AverageMethod.GetTotalValueBYFunc();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 13:
+                    Console.WriteLine("\n******Aggregate********");
+                    AggregateMethod.GetValueBYSimpleMethod();
+                    Console.WriteLine("\n**************");
+                    Console.WriteLine("\n******Aggregate********");
+                    AggregateMethod.GetValueBYForEmployee();
                     Console.WriteLine("\n**************");
                     break;
                 default:
