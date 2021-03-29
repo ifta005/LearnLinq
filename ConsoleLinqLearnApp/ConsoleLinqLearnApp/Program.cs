@@ -23,7 +23,8 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[12]Average : ");
             Console.WriteLine("[13]Aggregate : ");
             Console.WriteLine("[14]ALL Operator : ");
-            Console.WriteLine("[15]ALL Operator : ");
+            Console.WriteLine("[15]ANY : ");
+            Console.WriteLine("[16]Contain : ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -103,8 +104,13 @@ namespace ConsoleLinqLearnApp
                     Console.WriteLine("\n**************");
                     break;
                 case 15:
-                    Console.WriteLine("\n******Average********");
+                    Console.WriteLine("\n******ANY********");
                     QuantifiersOperatorAny.GetDataByAnyOpr();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 16:
+                    Console.WriteLine("\n******Contains********");
+                    ContainsMethod.GetDataByContainsOpr();
                     Console.WriteLine("\n**************");
                     break;
                 default:
