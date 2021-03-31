@@ -25,6 +25,7 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[14]ALL Operator : ");
             Console.WriteLine("[15]ANY : ");
             Console.WriteLine("[16]Contain : ");
+            Console.WriteLine("[17]Group BY : ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -111,6 +112,11 @@ namespace ConsoleLinqLearnApp
                 case 16:
                     Console.WriteLine("\n******Contains********");
                     ContainsMethod.GetDataByContainsOpr();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 17:
+                    Console.WriteLine("\n******Group BY********");
+                    GroupByMethod.GetDataByGroup();
                     Console.WriteLine("\n**************");
                     break;
                 default:
