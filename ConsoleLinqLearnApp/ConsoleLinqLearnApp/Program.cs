@@ -26,6 +26,7 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[15]ANY : ");
             Console.WriteLine("[16]Contain : ");
             Console.WriteLine("[17]Group BY : ");
+            Console.WriteLine("[18]Group BY Multiple: ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -117,6 +118,11 @@ namespace ConsoleLinqLearnApp
                 case 17:
                     Console.WriteLine("\n******Group BY********");
                     GroupByMethod.GetDataByGroup();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 18:
+                    Console.WriteLine("\n******Multiple Group BY********");
+                    GroupByMultipleMethod.GetMultipleDataByGroup();
                     Console.WriteLine("\n**************");
                     break;
                 default:
