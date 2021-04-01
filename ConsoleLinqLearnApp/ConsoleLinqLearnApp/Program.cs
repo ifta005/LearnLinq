@@ -33,6 +33,8 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[22]Method: ");
             Console.WriteLine("[23]Cross Join: ");
             Console.WriteLine("[24]Skip Method: ");
+            Console.WriteLine("[25]PAGINATION: ");
+
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -160,6 +162,11 @@ namespace ConsoleLinqLearnApp
                 case 24:
                     Console.WriteLine("\n******Skip Method********");
                     SkipMethod.GetSkipMethod();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 25:
+                    Console.WriteLine("\n******PAGE********");
+                    PageWithTakeSkipMethod.GetPageWithTakeSkipMethod();
                     Console.WriteLine("\n**************");
                     break;
 
