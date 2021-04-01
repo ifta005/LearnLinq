@@ -1,0 +1,33 @@
+﻿#The LINQ queries are executed in two different ways as follows.
+
+Deferred execution
+Immediate execution
+
+LINQ operators are divided into 2 categories. They are as follows:
+
+Deferred or Lazy Operators		: These query operators are used for deferred execution. For example – select, SelectMany, where, Take, Skip, etc. are belongs to Deferred or Lazy Operators category.
+Immediate or Greedy Operators	: These query operators are used for immediate execution. For Example – count, average, min, max, First, Last, ToArray, ToList, etc. are belongs to the Immediate or Greedy Operators category.
+
+#LINQ Deferred Execution:
+	LINQ Query is not executed at the point of its declaration. That means, when we write a LINQ query, it doesn’t execute by itself. It executes only when we access the query results. So, here the execution of the query is deferred until the query variable is iterated over using for each loop.
+
+#// In the below statement the LINQ Query is only defined and not executed
+            IEnumerable<Employee> result = from emp in listEmployees
+                                           where emp.Salary == 80000
+                                           select emp;
+
+#We will get the following advantages
+	It avoids unnecessary query execution which improves the performance of the application.
+	The Query creation and the Query execution are decoupled which provide us the flexibility to create the query in several steps.
+	A Linq deferred execution query is always re-evaluated when we re-enumerate. As a result, we always get the updated data.
+
+#Immediate Execution
+	LINQ query is executed at the point of its declaration. So, it forces the query to execute and gets the result immediately. 
+
+    // In the following statement, the LINQ Query is executed immediately as we are
+    // Using the ToList() method which is a greedy operator which forces the query 
+    // to be executed immediately
+            IEnumerable<Employee> result = (from emp in listEmployees
+                                           where emp.Salary == 80000
+                                           select emp).ToList();
+
