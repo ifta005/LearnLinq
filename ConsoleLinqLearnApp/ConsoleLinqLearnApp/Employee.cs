@@ -15,6 +15,7 @@ namespace ConsoleLinqLearnApp
         public int Salary { get; set; }
 
         public string Department { get; set; }
+        public int DepartmentId { get; set; }
         public static List<Employee> GetEmployees()
         {
             List<Employee> employees = new List<Employee>

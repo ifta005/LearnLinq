@@ -25,9 +25,31 @@ Immediate or Greedy Operators	: These query operators are used for immediate exe
 	LINQ query is executed at the point of its declaration. So, it forces the query to execute and gets the result immediately. 
 
     // In the following statement, the LINQ Query is executed immediately as we are
-    // Using the ToList() method which is a greedy operator which forces the query 
-    // to be executed immediately
+    // Using the ToList() method which is a greedy operator which forces the query to be executed immediately
             IEnumerable<Employee> result = (from emp in listEmployees
                                            where emp.Salary == 80000
                                            select emp).ToList();
+
+#Note: If you want to fetch the data from two data sources then you can use either the Method syntax or Query Syntax. But if you want to fetch the data from more than two data sources then it is easier to use the Query syntax rather than the Method syntax.
+
+#Linq JOIN
+     Linq Join you need to understand the following five things.
+
+    Outer data source
+    Inner data source
+    Outer Key selector (common key in the outer data source)
+    Inner Key selector (Common key in the inner data source)
+    Result selector (project the data into a result set)
+
+#Linq Group Join
+    we can apply the Group Join on two or more data sources based on a common key (the key must exist in both the data sources) and then it produces the result set in the form of groups. In simple words, we can say that Linq Group Join is used to group the result sets based on a common key.
+    Group Join we need to understand the following things.
+
+        Outer Data Source
+        Inner Data Source
+        Outer Key Selector
+        Inner Key Selector
+        Result Selector
+
+
 

@@ -27,6 +27,7 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[16]Contain : ");
             Console.WriteLine("[17]Group BY : ");
             Console.WriteLine("[18]Group BY Multiple: ");
+            Console.WriteLine("[19]JOIN Multiple Data: ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -123,6 +124,11 @@ namespace ConsoleLinqLearnApp
                 case 18:
                     Console.WriteLine("\n******Multiple Group BY********");
                     GroupByMultipleMethod.GetMultipleDataByGroup();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 19:
+                    Console.WriteLine("\n******JOIN Multiple DATA ********");
+                    JoinMultipleData.GetMultipleJoinData();
                     Console.WriteLine("\n**************");
                     break;
                 default:
