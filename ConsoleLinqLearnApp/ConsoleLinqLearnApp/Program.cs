@@ -28,6 +28,7 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[17]Group BY : ");
             Console.WriteLine("[18]Group BY Multiple: ");
             Console.WriteLine("[19]JOIN Multiple Data: ");
+            Console.WriteLine("[20]Left Outer Join: ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -129,6 +130,11 @@ namespace ConsoleLinqLearnApp
                 case 19:
                     Console.WriteLine("\n******JOIN Multiple DATA ********");
                     JoinMultipleData.GetMultipleJoinData();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 20:
+                    Console.WriteLine("\n******Left Outer JOIN DATA ********");
+                    LeftOuterJoinMethod.GetLeftOuterJoinMethod();
                     Console.WriteLine("\n**************");
                     break;
                 default:
