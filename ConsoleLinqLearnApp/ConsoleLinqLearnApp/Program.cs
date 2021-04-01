@@ -29,6 +29,10 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[18]Group BY Multiple: ");
             Console.WriteLine("[19]JOIN Multiple Data: ");
             Console.WriteLine("[20]Left Outer Join: ");
+            Console.WriteLine("[21]Cross Join: ");
+            Console.WriteLine("[22]Method: ");
+            Console.WriteLine("[23]Cross Join: ");
+            Console.WriteLine("[24]Skip Method: ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -137,6 +141,28 @@ namespace ConsoleLinqLearnApp
                     LeftOuterJoinMethod.GetLeftOuterJoinMethod();
                     Console.WriteLine("\n**************");
                     break;
+                case 21:
+                    Console.WriteLine("\n******Cross Join ********");
+                    CrossJoinMethod.GetCrossJoinMethod();
+                    Console.WriteLine("\n**************");
+                    break;
+
+                case 22:
+                    Console.WriteLine("\n****** Common ********");
+                    CommonMethod.GetVoidData();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 23:
+                    Console.WriteLine("\n******Partitioning Operation********");
+                    PartitioningOperations.GetPartitioningOperations();
+                    Console.WriteLine("\n**************");
+                    break;
+                case 24:
+                    Console.WriteLine("\n******Skip Method********");
+                    SkipMethod.GetSkipMethod();
+                    Console.WriteLine("\n**************");
+                    break;
+
                 default:
                     Environment.Exit(0);// exit
                     break;

@@ -51,5 +51,40 @@ Immediate or Greedy Operators	: These query operators are used for immediate exe
         Inner Key Selector
         Result Selector
 
+#Linq Cross Join
+    When combining two data sources (or you can two collections) using Linq Cross Join, then each element in the first data source (i.e. first collection) will be mapped with each and every element in the second data source (i.e. second collection).
 
+    In Cross Join we don’t require the common key or property as the “on” keyword which is used to specify the Join Key is not required. And moreover, there is no filtering of data. So, the total number of elements in the resultant sequence will be the product of the two data sources involved in the join. If the first data source contains 5 elements and the second data source contains 3 elements then the resultant sequence will contain (5*3) 15 elements.
+
+#Element Operators in Linq
+     Element Operators in Linq are used to return a single element from a data source using the element index or based on a predicate
+     
+     To perform the following operations, then you need to use the Element Operators.
+        Select the First record from a data source.
+        Fetch a specific record from the data source.
+        Select the last record from a data source.
+    The ElementAt operator is used to return an element from a specific index. If the data source is empty or if the provided index value is out of range, then we will get ArgumentOutOfRangeException.
+
+#SequenceEqual
+    Both the sequence contains the same data but here we are getting the output as False. This is because when comparing the complex types, the default comparer which is used by the SequenceEqual method will only check if the object references are equal or not.
+
+#Partitioning Operations in Linq
+    The Partitioning Operations in Linq are used to divide a sequence or you can say data source into two parts and then return one of them as output without changing the positions of the elements.
+    We need to use Partitioning operators when we want to perform the following operations.
+
+        When you want to select the top n number of records from a data source.
+        If you want to select records from a data source until a specified condition is true.
+        Select records from a data source except for the first n number of records.
+        Skip records from a data source until a specified condition is true and then select all records.
+        It can be used to implement pagination for a data source.
+
+#TakeWhile Method
+    TakeWhile Method in Linq is used to fetch all the elements from a data source or sequence until a specified condition is true. Once the condition is failed, then the TakeWhile method will not check the rest of the elements presents in the data source even though the condition is true for the remaining elements.
+
+#Paging Using Skip and Take    
+    Drawback:
+        In a client-server architecture, the number of requests between the client and server is increased. In such cases, you may get the data at once and store it locally and then implement the paging at the client-side.
+
+    Page Number = PN and Number Of Records Per Page = NRP, then you need to use the following formula:
+    Result = DataSource.Skip((PN – 1) * NRP).Take(NRP)
 
