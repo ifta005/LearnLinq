@@ -13,6 +13,9 @@ namespace ConsoleLinqLearnApp
             int PageNumber = 0;
             do
             {
+                /// Page Number = PN and Number Of Records Per Page = NRP, then you need to use the following formula:
+                ///Result = DataSource.Skip((PN – 1) * NRP).Take(NRP)
+                
                 Console.WriteLine("Enter the Page Number between 1 and 4");
                 if (int.TryParse(Console.ReadLine(), out PageNumber))
                 {
@@ -38,7 +41,7 @@ namespace ConsoleLinqLearnApp
                 {
                     Console.WriteLine("Please Enter a Valid Page Number");
                 }
-            } while (true);
+            } while (PageNumber>0);
         }
     }
 }
