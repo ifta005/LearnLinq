@@ -34,7 +34,7 @@ namespace ConsoleLinqLearnApp
             Console.WriteLine("[23]Cross Join: ");
             Console.WriteLine("[24]Skip Method: ");
             Console.WriteLine("[25]PAGINATION: ");
-
+            Console.WriteLine("[25]Range Repeat Empty Method: ");
 
             Console.WriteLine("\n[0]EXIT : ");
 
@@ -169,7 +169,11 @@ namespace ConsoleLinqLearnApp
                     PageWithTakeSkipMethod.GetPageWithTakeSkipMethod();
                     Console.WriteLine("\n**************");
                     break;
-
+                case 26:
+                    Console.WriteLine("\n******Range Repeat Empty ********");
+                    RangeRepeatEmptyMethod.GetRangeRepeatEmptyMethod();
+                    Console.WriteLine("\n**************");
+                    break;
                 default:
                     Environment.Exit(0);// exit
                     break;
