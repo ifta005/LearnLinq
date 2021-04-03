@@ -88,3 +88,12 @@ Immediate or Greedy Operators	: These query operators are used for immediate exe
     Page Number = PN and Number Of Records Per Page = NRP, then you need to use the following formula:
     Result = DataSource.Skip((PN – 1) * NRP).Take(NRP)
 
+#When to use Cast over OfType and vice versa?
+        We need to use the Cast Operator
+
+        When we want to cast all the elements in the collection
+        When we know for sure the collection contains only elements of the specified type
+        We need to use the OfType operator
+
+        When we want to filter the elements and return only the specified type of elements.                                     
+
